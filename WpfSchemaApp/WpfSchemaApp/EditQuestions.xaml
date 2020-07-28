@@ -1,0 +1,62 @@
+﻿<Window x:Class="WpfSchemaApp.EditQuestions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSchemaApp"
+        mc:Ignorable="d"
+        Title="Edit Questions" Height="600" Width="800"
+        BorderBrush="Aqua"
+        Background="AliceBlue">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="245*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="25,10,0,0" TextWrapping="Wrap" Text="Digital Reporting made easy!" FontSize="20" FontStyle="Oblique"  VerticalAlignment="Top" Width="529" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="dataStatus" HorizontalAlignment="Right" Margin="0,10,0,0" TextWrapping="Wrap" Text="test" FontSize="10" FontStyle="Oblique"  VerticalAlignment="Top" Width="104" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="625,423,0,0" TextWrapping="Wrap" Text="Admin Priviliges enabled. Carefull, you don't want to delete something precious!" FontSize="10" FontStyle="Oblique"  VerticalAlignment="Top" Width="100" Height="67" Grid.Column="1"/>
+        <Button x:Name="BackBtn" Content="Back" HorizontalAlignment="Left" Margin="625,490,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="BackBtn_Click" Grid.Column="1"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="25,57,0,0" TextWrapping="Wrap" Text="Questions:" FontSize="20" FontStyle="Oblique"  VerticalAlignment="Top" Width="134" RenderTransformOrigin="-0.157,0.444" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="answerTxtTittle" HorizontalAlignment="Left" Margin="169,157,0,0" TextWrapping="Wrap" Text="Answers:" FontSize="20" FontStyle="Oblique"  VerticalAlignment="Top" Width="134" Grid.Column="1"/>
+
+        <Grid x:Name="LoadingGrid" HorizontalAlignment="Left" Height="406" Margin="25,84,0,0" VerticalAlignment="Top" Width="134" Background="White" Grid.ColumnSpan="2" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+
+        </Grid>
+        <Grid x:Name="ALoadingGrid" 
+              HorizontalAlignment="Left" 
+              Height="82" Margin="169,66,0,0" 
+              VerticalAlignment="Top" 
+              Width="367" Grid.Column="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35*"/>
+                <RowDefinition Height="47*"/>
+            </Grid.RowDefinitions>
+            <TextBlock HorizontalAlignment="Left" Margin="0,24.264,0,0" TextWrapping="Wrap" Text="Nr:" VerticalAlignment="Top" RenderTransformOrigin="-0.312,0.562" Grid.Row="1"/>
+            <TextBox x:Name="tQnr" HorizontalAlignment="Left" Height="16" Margin="30,24.264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="-0.4,-0.375" Grid.Row="1"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Question text:" VerticalAlignment="Top"/>
+            <TextBox x:Name="tQtxt" HorizontalAlignment="Left" Height="75" Margin="79,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="285" Grid.RowSpan="2"/>
+        </Grid>
+        <Grid x:Name="addAltButtonBox" Margin="536,66,30,421" Grid.Column="1">
+            <Button x:Name="saveQueBtn" Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="30" Click="SaveQueBtn_Click"/>
+            <Button x:Name="addAltBtn" Content="Add Alt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="30" Click="AddAltBtn_Click" Margin="0,42,0,0"/>
+            <Button x:Name="newQueBtn" Content="New" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="72" Click="NewQueBtn_Click" Margin="75,0,0,0"/>
+        </Grid>
+
+        <Grid x:Name="AlternativGrid1" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="169,189,0,0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="23*"/>
+                <RowDefinition Height="77*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="37*"/>
+                <ColumnDefinition Width="24*"/>
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+        <Grid x:Name="AlternativGrid2" Width="312" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="274,189,0,0" Grid.Column="1">
+
+        </Grid>
+    </Grid>
+</Window>

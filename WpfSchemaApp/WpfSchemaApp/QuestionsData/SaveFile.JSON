@@ -1,0 +1,90 @@
+﻿{
+  "questionData": [
+    {
+      "AnswerData": [
+        {
+          "AnswerTxt": "FDD",
+          "NQuestionId": 2
+        },
+        {
+          "AnswerTxt": "H&M",
+          "NQuestionId": 2
+        },
+        {
+          "AnswerTxt": "P&I - CASUALTY",
+          "NQuestionId": 2
+        },
+        {
+          "AnswerTxt": "P&I CARGO",
+          "NQuestionId": 2
+        },
+        {
+          "AnswerTxt": "P&I PEOPLE",
+          "NQuestionId": 2
+        }
+      ],
+      "QuestionID": 1,
+      "QuestionTxt": "Claim Type"
+    },
+    {
+      "AnswerData": [
+        {
+          "AnswerTxt": "Yes",
+          "NQuestionId": 3
+        },
+        {
+          "AnswerTxt": "No",
+          "NQuestionId": 4
+        }
+      ],
+      "QuestionID": 2,
+      "QuestionTxt": "Do you anticipate a payment to be made on the file"
+    },
+    {
+      "AnswerData": [
+        {
+          "AnswerTxt": "Yes",
+          "NQuestionId": 5
+        },
+        {
+          "AnswerTxt": "No",
+          "NQuestionId": 4
+        }
+      ],
+      "QuestionID": 3,
+      "QuestionTxt": " Will this payment be made in USD?"
+    },
+    {
+      "AnswerData": [
+        {
+          "AnswerTxt": "Yes",
+          "NQuestionId": 6
+        },
+        {
+          "AnswerTxt": "No",
+          "NQuestionId": 10
+        },
+        {
+          "AnswerTxt": "I do not know",
+          "NQuestionId": 8
+        }
+      ],
+      "QuestionID": 4,
+      "QuestionTxt": " Are there American Persons involved in this trade?"
+    },
+    {
+      "AnswerData": [
+        {
+          "AnswerTxt": "Yes",
+          "NQuestionId": 6
+        },
+        {
+          "AnswerTxt": "No",
+          "NQuestionId": 0
+        }
+      ],
+      "QuestionID": 5,
+      "QuestionTxt": " Have any payments related to this trade conducted in USD?"
+    }
+  ]
+}
